@@ -1,5 +1,5 @@
-<!doctype html> 
-<html lang="en/us">
+<!doctype html>
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,24 +7,20 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Landing page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather Dashboard</title>
 </head>
 <body>
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" style="background-color: rgba(32, 182, 137, 0.924);" href="index.html">Latitude</a>
-            <button class="navbar-toggler" type="button" 
-            data-toggle="collapse" data-target="#navbarNavDropdown" 
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" 
-                        id="navbarDropdownMenuLink" role="button" 
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -35,11 +31,10 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Resources/Visualizations/comparison.html">Comparison</a>
+                        <a class="nav-link" href="comparison.html">Comparison</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Resources/Visualizations/data.html">Data</a>
-                    </li>
+                        <a class="nav-link" href="data.html">Data</a>
                 </ul>
             </div>
         </nav>
@@ -50,17 +45,14 @@
                 <div class="box" style="padding-bottom: 20px;">
                     <h3 class="title">Summary: Latitude vs. X</h3>
                     <hr>
-                    <img src="Resources/assets/images/Fig1.png" class="vizualization rounded float-left" alt="Max Temperature">
-                    <p> The purpose of this project was to analyze how weather across 500+ cities across the world
-                      changes as you get closer to the equator. To accomplish this analysis, OpenWeatherMap API was
-                      utilized to assemble the dataset to create a representative model of weather across world cities.</p>
+                    <img src="Resources/assets/images/Fig1.png" class="visualization rounded float-left" alt="Max Temperature">
+                    <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
                       <br>
-                    <p> Matplotlib was used to build a series of plots to showcase the relationships regarding several variables
-                      of weather vs. latitude. Relationships analyzed included: Temperature (F) vs. Latitude, Humidity (%) vs. Latitude,
-                      Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude.</p>
-                      <br>
-                    <p> Data and visualizations are are provided as part of the analysis, including explanations and descriptions
-                      of trends and correlations.</p>
+                    <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                        Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides
+                        the source data and visualizations created as part of the analysis, as well as explanations and descriptions
+                        of any trends and correlations witnessed. 
                 </div>
             </div>
             <div class="col-lg-5 col-md-12">
@@ -71,7 +63,7 @@
                         <div class="row" style="padding-bottom: 70px;">
                             <div class="col-6">
                                 <a href="Resources/assets/images/Fig1.png">
-                                <img class="panel" src="Resources/assets/images/Fig1.png" alt="Temperature">
+                                <img class="panel" src="Resources/assets/images/Fig1.png" alt="Max Temperature">
                                 </a>
                             </div>
                             <div class="col-6">
@@ -87,8 +79,8 @@
                                 </a>
                             </div>
                             <div class="col-6">
-                                <a href="WebVisualizations/wind.html">
-                                    <img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind">
+                                <a href="Resources/assets/images/Fig4.png">
+                                    <img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind Speed">
                                 </a>
                             </div>
                         </div>
