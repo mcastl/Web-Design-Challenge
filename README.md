@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Web Visualization Dashboard
+=======
+#Web Visualization Dashboard
+>>>>>>> 3d070aaf2b8b8c66ac7d5152dcae8250c9b94535
  
 [Click to take a look at the Dashboard](https://mcastl.github.io/)
 
