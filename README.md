@@ -1,6 +1,6 @@
 #Web Visualization Dashboard
  
-[Click to take a look at the Dashboard](https://mcastl.github.io/)
+[Click to take a look at the Dashboard](https://mcastl.github.io/Web-Design-Challenge/)
 
 ## General info
 The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
