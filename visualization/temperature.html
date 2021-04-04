@@ -7,13 +7,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Weather Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Temperature visualization</title>
 </head>
 <body>
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Latitude</a>
+            <a class="navbar-brand" href="../index.html">Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,35 +24,32 @@
                             Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="visualization/temperature.html">Max Temperature</a>
-                            <a class="dropdown-item" href="visualization/humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="visualization/cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="visualization/wind.html">Wind Speed</a>
+                            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind.html">Wind Speed</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="comparison.html">Comparison</a>
+                        <a class="nav-link" href="../comparison.html">Comparison</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="data.html">Data</a>
+                        <a class="nav-link" href="../data.html">Data</a>
                 </ul>
             </div>
         </nav>
     </div>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-12">
                 <div class="box" style="padding-bottom: 20px;">
-                    <h3 class="title">Summary: Latitude vs. X</h3>
-                    <img src="Resources/assets/images/Fig1.png" class="visualization rounded float-left" alt="Max Temperature">
-                    <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                      <br>
-                    <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                        Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides
-                        the source data and visualizations created as part of the analysis, as well as explanations and descriptions
-                        of any trends and correlations witnessed.</p> 
+                    <h3 class="title">Max Temperature</h3>
+                    <img src="../Resources/assets/images/Fig1.png" alt="Latitude vs. temperature">
+                    <p>As expected,the weather becomes significantly warmer as one approaches the equator (O Deg. Latitude). 
+                        More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time 
+                        of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year 
+                        this data was gathered.</p>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12">
@@ -62,25 +59,25 @@
                     <div class="container">
                         <div class="row" style="padding-bottom: 70px;">
                             <div class="col-6">
-                                <a href="visualization/temperature.html">
-                                <img class="panel" src="Resources/assets/images/Fig1.png" alt="Max Temperature">
+                                <a href="temperature.html">
+                                <img class="panel" src="../Resources/assets/images/Fig1.png" alt="Max Temperature">
                                 </a>
                             </div>
                             <div class="col-6">
-                                <a href="visualization/humidity.html">
-                                <img class="panel" src="Resources/assets/images/Fig2.png" alt="Humidity">
+                                <a href="humidity.html">
+                                <img class="panel" src="../Resources/assets/images/Fig2.png" alt="Humidity">
                                 </a>
                             </div>
                         </div>
                         <div class="row" style="padding-bottom: 70px;">
                             <div class="col-6">
-                                <a href="visualization/cloudiness.html">
-                                <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness">
+                                <a href="cloudiness.html">
+                                <img class="panel" src="../Resources/assets/images/Fig3.png" alt="Cloudiness">
                                 </a>
                             </div>
                             <div class="col-6">
-                                <a href="visualization/wind.html">
-                                    <img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind Speed">
+                                <a href="wind.html">
+                                    <img class="panel" src="../Resources/assets/images/Fig4.png" alt="Wind Speed">
                                 </a>
                             </div>
                         </div>
