@@ -1,4 +1,4 @@
-# Web Visualization Dashboard
+#Web Visualization Dashboard
  
 [Click to take a look at the Dashboard](https://mcastl.github.io/)
 
